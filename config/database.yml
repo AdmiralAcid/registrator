@@ -1,0 +1,13 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: regdev
+  pool: 5
+  username: nvl
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: regtest
+  pool: 5
+  username: nvl
