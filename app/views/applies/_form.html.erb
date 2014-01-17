@@ -1,0 +1,185 @@
+<%= form_for(@apply) do |f| %>
+  <% if @apply.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@apply.errors.count, "error") %> prohibited this apply from being saved:</h2>
+
+      <ul>
+      <% @apply.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :applyNumber %><br>
+    <%= f.number_field :applyNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :phoneApplyDate %><br>
+    <%= f.date_select :phoneApplyDate %>
+  </div>
+  <div class="field">
+    <%= f.label :internetApplyDate %><br>
+    <%= f.date_select :internetApplyDate %>
+  </div>
+  <div class="field">
+    <%= f.label :iptvApplyDate %><br>
+    <%= f.date_select :iptvApplyDate %>
+  </div>
+  <div class="field">
+    <%= f.label :nameOrFIO %><br>
+    <%= f.text_area :nameOrFIO %>
+  </div>
+  <div class="field">
+    <%= f.label :street %><br>
+    <%= f.text_area :street %>
+  </div>
+  <div class="field">
+    <%= f.label :house %><br>
+    <%= f.number_field :house %>
+  </div>
+  <div class="field">
+    <%= f.label :building %><br>
+    <%= f.text_area :building %>
+  </div>
+  <div class="field">
+    <%= f.label :apartmentOrOffice %><br>
+    <%= f.number_field :apartmentOrOffice %>
+  </div>
+  <div class="field">
+    <%= f.label :floor %><br>
+    <%= f.number_field :floor %>
+  </div>
+  <div class="field">
+    <%= f.label :entrance %><br>
+    <%= f.number_field :entrance %>
+  </div>
+  <div class="field">
+    <%= f.label :phoneApplyStatus %><br>
+    <%= f.text_area :phoneApplyStatus %>
+  </div>
+  <div class="field">
+    <%= f.label :internetApplyStatus %><br>
+    <%= f.text_area :internetApplyStatus %>
+  </div>
+  <div class="field">
+    <%= f.label :iptvApplyStatus %><br>
+    <%= f.text_area :iptvApplyStatus %>
+  </div>
+  <div class="field">
+    <%= f.label :applyTreatedBy %><br>
+    <%= f.text_area :applyTreatedBy %>
+  </div>
+  <div class="field">
+    <%= f.label :plannedPhoneInstallDate %><br>
+    <%= f.date_select :plannedPhoneInstallDate %>
+  </div>
+  <div class="field">
+    <%= f.label :plannedInternetInstallDate %><br>
+    <%= f.date_select :plannedInternetInstallDate %>
+  </div>
+  <div class="field">
+    <%= f.label :phoneComments %><br>
+    <%= f.text_area :phoneComments %>
+  </div>
+  <div class="field">
+    <%= f.label :internetComments %><br>
+    <%= f.text_area :internetComments %>
+  </div>
+  <div class="field">
+    <%= f.label :phoneContractNumber %><br>
+    <%= f.number_field :phoneContractNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :phoneContractDate %><br>
+    <%= f.date_select :phoneContractDate %>
+  </div>
+  <div class="field">
+    <%= f.label :phonePorts %><br>
+    <%= f.number_field :phonePorts %>
+  </div>
+  <div class="field">
+    <%= f.label :phoneContractConcludedBy %><br>
+    <%= f.text_area :phoneContractConcludedBy %>
+  </div>
+  <div class="field">
+    <%= f.label :phonePaymentDate %><br>
+    <%= f.date_select :phonePaymentDate %>
+  </div>
+  <div class="field">
+    <%= f.label :phoneDocsPassDate %><br>
+    <%= f.date_select :phoneDocsPassDate %>
+  </div>
+  <div class="field">
+    <%= f.label :phoneInstallDate %><br>
+    <%= f.date_select :phoneInstallDate %>
+  </div>
+  <div class="field">
+    <%= f.label :internetContractNumber %><br>
+    <%= f.number_field :internetContractNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :internetContractDate %><br>
+    <%= f.date_select :internetContractDate %>
+  </div>
+  <div class="field">
+    <%= f.label :internetPorts %><br>
+    <%= f.number_field :internetPorts %>
+  </div>
+  <div class="field">
+    <%= f.label :internetContractConcludedBy %><br>
+    <%= f.text_area :internetContractConcludedBy %>
+  </div>
+  <div class="field">
+    <%= f.label :internetPaymentDate %><br>
+    <%= f.date_select :internetPaymentDate %>
+  </div>
+  <div class="field">
+    <%= f.label :internetDocsPassDate %><br>
+    <%= f.date_select :internetDocsPassDate %>
+  </div>
+  <div class="field">
+    <%= f.label :internetInstallDate %><br>
+    <%= f.date_select :internetInstallDate %>
+  </div>
+  <div class="field">
+    <%= f.label :iptvContractNumber %><br>
+    <%= f.number_field :iptvContractNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :iptvContractDate %><br>
+    <%= f.date_select :iptvContractDate %>
+  </div>
+  <div class="field">
+    <%= f.label :iptvPorts %><br>
+    <%= f.number_field :iptvPorts %>
+  </div>
+  <div class="field">
+    <%= f.label :iptvContractConcludedBy %><br>
+    <%= f.text_area :iptvContractConcludedBy %>
+  </div>
+  <div class="field">
+    <%= f.label :iptvPaymentDate %><br>
+    <%= f.date_select :iptvPaymentDate %>
+  </div>
+  <div class="field">
+    <%= f.label :iptvInstallDate %><br>
+    <%= f.date_select :iptvInstallDate %>
+  </div>
+  <div class="field">
+    <%= f.label :setToBox %><br>
+    <%= f.check_box :setToBox %>
+  </div>
+  <div class="field">
+    <%= f.label :clientType %><br>
+    <%= f.text_area :clientType %>
+  </div>
+  <div class="field">
+    <%= f.label :insertionDate %><br>
+    <%= f.date_select :insertionDate %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

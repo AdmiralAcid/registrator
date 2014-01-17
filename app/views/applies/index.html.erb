@@ -1,0 +1,109 @@
+<h1>Listing applies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Applynumber</th>
+      <th>Phoneapplydate</th>
+      <th>Internetapplydate</th>
+      <th>Iptvapplydate</th>
+      <th>Nameorfio</th>
+      <th>Street</th>
+      <th>House</th>
+      <th>Building</th>
+      <th>Apartmentoroffice</th>
+      <th>Floor</th>
+      <th>Entrance</th>
+      <th>Phoneapplystatus</th>
+      <th>Internetapplystatus</th>
+      <th>Iptvapplystatus</th>
+      <th>Applytreatedby</th>
+      <th>Plannedphoneinstalldate</th>
+      <th>Plannedinternetinstalldate</th>
+      <th>Phonecomments</th>
+      <th>Internetcomments</th>
+      <th>Phonecontractnumber</th>
+      <th>Phonecontractdate</th>
+      <th>Phoneports</th>
+      <th>Phonecontractconcludedby</th>
+      <th>Phonepaymentdate</th>
+      <th>Phonedocspassdate</th>
+      <th>Phoneinstalldate</th>
+      <th>Internetcontractnumber</th>
+      <th>Internetcontractdate</th>
+      <th>Internetports</th>
+      <th>Internetcontractconcludedby</th>
+      <th>Internetpaymentdate</th>
+      <th>Internetdocspassdate</th>
+      <th>Internetinstalldate</th>
+      <th>Iptvcontractnumber</th>
+      <th>Iptvcontractdate</th>
+      <th>Iptvports</th>
+      <th>Iptvcontractconcludedby</th>
+      <th>Iptvpaymentdate</th>
+      <th>Iptvinstalldate</th>
+      <th>Settobox</th>
+      <th>Clienttype</th>
+      <th>Insertiondate</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @applies.each do |apply| %>
+      <tr<%= cycle(" class=\"grey_row\"".html_safe, nil) %>>
+        <td><%= apply.applyNumber %></td>
+        <td><%= apply.phoneApplyDate %></td>
+        <td><%= apply.internetApplyDate %></td>
+        <td><%= apply.iptvApplyDate %></td>
+        <td><%= apply.nameOrFIO %></td>
+        <td><%= apply.street %></td>
+        <td><%= apply.house %></td>
+        <td><%= apply.building %></td>
+        <td><%= apply.apartmentOrOffice %></td>
+        <td><%= apply.floor %></td>
+        <td><%= apply.entrance %></td>
+        <td><%= apply.phoneApplyStatus %></td>
+        <td><%= apply.internetApplyStatus %></td>
+        <td><%= apply.iptvApplyStatus %></td>
+        <td><%= apply.applyTreatedBy %></td>
+        <td><%= apply.plannedPhoneInstallDate %></td>
+        <td><%= apply.plannedInternetInstallDate %></td>
+        <td><%= apply.phoneComments %></td>
+        <td><%= apply.internetComments %></td>
+        <td><%= apply.phoneContractNumber %></td>
+        <td><%= apply.phoneContractDate %></td>
+        <td><%= apply.phonePorts %></td>
+        <td><%= apply.phoneContractConcludedBy %></td>
+        <td><%= apply.phonePaymentDate %></td>
+        <td><%= apply.phoneDocsPassDate %></td>
+        <td><%= apply.phoneInstallDate %></td>
+        <td><%= apply.internetContractNumber %></td>
+        <td><%= apply.internetContractDate %></td>
+        <td><%= apply.internetPorts %></td>
+        <td><%= apply.internetContractConcludedBy %></td>
+        <td><%= apply.internetPaymentDate %></td>
+        <td><%= apply.internetDocsPassDate %></td>
+        <td><%= apply.internetInstallDate %></td>
+        <td><%= apply.iptvContractNumber %></td>
+        <td><%= apply.iptvContractDate %></td>
+        <td><%= apply.iptvPorts %></td>
+        <td><%= apply.iptvContractConcludedBy %></td>
+        <td><%= apply.iptvPaymentDate %></td>
+        <td><%= apply.iptvInstallDate %></td>
+        <td><%= apply.setToBox %></td>
+        <td><%= apply.clientType %></td>
+        <td><%= apply.insertionDate %></td>
+        <td><%= link_to 'Show', apply %></td>
+        <td><%= link_to 'Edit', edit_apply_path(apply) %></td>
+        <td><%= link_to 'Destroy', apply, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Apply', new_apply_path %>
