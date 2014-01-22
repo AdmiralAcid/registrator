@@ -1,0 +1,75 @@
+<h1>Listing orders</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ordernumber</th>
+      <th>Utusendingdate</th>
+      <th>Uasdate</th>
+      <th>Performdate</th>
+      <th>Performer</th>
+      <th>Applynumber</th>
+      <th>Contractnumber</th>
+      <th>Service</th>
+      <th>Ordertype</th>
+      <th>Cost</th>
+      <th>Portsnumber</th>
+      <th>Phonenumber</th>
+      <th>Nameorfio</th>
+      <th>Street</th>
+      <th>House</th>
+      <th>Building</th>
+      <th>Apartmentoroffice</th>
+      <th>Floor</th>
+      <th>Entrance</th>
+      <th>Responsibleperson</th>
+      <th>Comments</th>
+      <th>Contactdata</th>
+      <th>Persontype</th>
+      <th>Formingdate</th>
+      <th>Aoreturningdate</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @orders.each do |order| %>
+      <tr<%= cycle(" class=\"grey_row\"".html_safe, nil) %>>
+        <td><%= order.orderNumber %></td>
+        <td><%= order.utuSendingDate %></td>
+        <td><%= order.uasDate %></td>
+        <td><%= order.performDate %></td>
+        <td><%= order.performer %></td>
+        <td><%= order.applyNumber %></td>
+        <td><%= order.contractNumber %></td>
+        <td><%= order.service %></td>
+        <td><%= order.orderType %></td>
+        <td><%= order.cost %></td>
+        <td><%= order.portsNumber %></td>
+        <td><%= order.phoneNumber %></td>
+        <td><%= order.nameOrFIO %></td>
+        <td><%= order.street %></td>
+        <td><%= order.house %></td>
+        <td><%= order.building %></td>
+        <td><%= order.apartmentOrOffice %></td>
+        <td><%= order.floor %></td>
+        <td><%= order.entrance %></td>
+        <td><%= order.responsiblePerson %></td>
+        <td><%= order.comments %></td>
+        <td><%= order.contactData %></td>
+        <td><%= order.personType %></td>
+        <td><%= order.formingDate %></td>
+        <td><%= order.aoReturningDate %></td>
+        <td><%= link_to 'Show', order %></td>
+        <td><%= link_to 'Edit', edit_order_path(order) %></td>
+        <td><%= link_to 'Destroy', order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Order', new_order_path %>

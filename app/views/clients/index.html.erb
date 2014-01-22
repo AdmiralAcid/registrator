@@ -1,0 +1,95 @@
+<h1>Listing clients</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nameorfio</th>
+      <th>Persontype</th>
+      <th>Phonecontractnumber</th>
+      <th>Internetcontractnumber</th>
+      <th>Phonenumber</th>
+      <th>Faxnumber</th>
+      <th>Email</th>
+      <th>Representposition</th>
+      <th>Representfio</th>
+      <th>Contactperson</th>
+      <th>Inn</th>
+      <th>Kpp</th>
+      <th>Ogrn</th>
+      <th>Okpo</th>
+      <th>Okonkh</th>
+      <th>Okwed</th>
+      <th>Passportdata</th>
+      <th>Legaladdress</th>
+      <th>Postaddress</th>
+      <th>Connectionpointaddress</th>
+      <th>Bankname</th>
+      <th>Bankbik</th>
+      <th>Bankcorraccount</th>
+      <th>Currentaccount</th>
+      <th>Additionalinfo</th>
+      <th>Placeofbirth</th>
+      <th>Dateofbirth</th>
+      <th>Perscabphonelogin</th>
+      <th>Perscabphonepasswd</th>
+      <th>Perscabinternetlogin</th>
+      <th>Perscabinternetpasswd</th>
+      <th>Benefitdocument</th>
+      <th>Phonecontractdate</th>
+      <th>Internetcontractdate</th>
+      <th>Contractacceptor</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @clients.each do |client| %>
+      <tr<%= cycle(" class=\"grey_row\"".html_safe, nil) %>>
+        <td><%= client.nameOrFIO %></td>
+        <td><%= client.personType %></td>
+        <td><%= client.phoneContractNumber %></td>
+        <td><%= client.internetContractNumber %></td>
+        <td><%= client.phoneNumber %></td>
+        <td><%= client.faxNumber %></td>
+        <td><%= client.email %></td>
+        <td><%= client.representPosition %></td>
+        <td><%= client.representFIO %></td>
+        <td><%= client.contactPerson %></td>
+        <td><%= client.inn %></td>
+        <td><%= client.kpp %></td>
+        <td><%= client.ogrn %></td>
+        <td><%= client.okpo %></td>
+        <td><%= client.okonkh %></td>
+        <td><%= client.okwed %></td>
+        <td><%= client.passportData %></td>
+        <td><%= client.legalAddress %></td>
+        <td><%= client.postAddress %></td>
+        <td><%= client.connectionPointAddress %></td>
+        <td><%= client.bankName %></td>
+        <td><%= client.bankBIK %></td>
+        <td><%= client.bankCorrAccount %></td>
+        <td><%= client.currentAccount %></td>
+        <td><%= client.additionalInfo %></td>
+        <td><%= client.placeOfBirth %></td>
+        <td><%= client.dateOfBirth %></td>
+        <td><%= client.persCabPhoneLogin %></td>
+        <td><%= client.persCabPhonePasswd %></td>
+        <td><%= client.persCabInternetLogin %></td>
+        <td><%= client.persCabInternetPasswd %></td>
+        <td><%= client.benefitDocument %></td>
+        <td><%= client.phoneContractDate %></td>
+        <td><%= client.internetContractDate %></td>
+        <td><%= client.contractAcceptor %></td>
+        <td><%= link_to 'Show', client %></td>
+        <td><%= link_to 'Edit', edit_client_path(client) %></td>
+        <td><%= link_to 'Destroy', client, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Client', new_client_path %>

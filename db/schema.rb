@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140117044223) do
+ActiveRecord::Schema.define(version: 20140122053512) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -59,6 +59,76 @@ ActiveRecord::Schema.define(version: 20140117044223) do
     t.boolean  "setToBox"
     t.text     "clientType"
     t.date     "insertionDate"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "clients", force: true do |t|
+    t.text     "nameOrFIO"
+    t.text     "personType"
+    t.integer  "phoneContractNumber"
+    t.integer  "internetContractNumber"
+    t.text     "phoneNumber"
+    t.text     "faxNumber"
+    t.text     "email"
+    t.text     "representPosition"
+    t.text     "representFIO"
+    t.text     "contactPerson"
+    t.text     "inn"
+    t.text     "kpp"
+    t.text     "ogrn"
+    t.text     "okpo"
+    t.text     "okonkh"
+    t.text     "okwed"
+    t.text     "passportData"
+    t.text     "legalAddress"
+    t.text     "postAddress"
+    t.text     "connectionPointAddress"
+    t.text     "bankName"
+    t.text     "bankBIK"
+    t.text     "bankCorrAccount"
+    t.text     "currentAccount"
+    t.text     "additionalInfo"
+    t.text     "placeOfBirth"
+    t.date     "dateOfBirth"
+    t.text     "persCabPhoneLogin"
+    t.text     "persCabPhonePasswd"
+    t.text     "persCabInternetLogin"
+    t.text     "persCabInternetPasswd"
+    t.text     "benefitDocument"
+    t.date     "phoneContractDate"
+    t.date     "internetContractDate"
+    t.text     "contractAcceptor"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "orders", force: true do |t|
+    t.integer  "orderNumber"
+    t.date     "utuSendingDate"
+    t.date     "uasDate"
+    t.date     "performDate"
+    t.text     "performer"
+    t.integer  "applyNumber"
+    t.integer  "contractNumber"
+    t.text     "service"
+    t.text     "orderType"
+    t.decimal  "cost",              precision: 7, scale: 2
+    t.text     "portsNumber"
+    t.text     "phoneNumber"
+    t.text     "nameOrFIO"
+    t.text     "street"
+    t.integer  "house"
+    t.text     "building"
+    t.integer  "apartmentOrOffice"
+    t.integer  "floor"
+    t.integer  "entrance"
+    t.text     "responsiblePerson"
+    t.text     "comments"
+    t.text     "contactData"
+    t.text     "personType"
+    t.date     "formingDate"
+    t.date     "aoReturningDate"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

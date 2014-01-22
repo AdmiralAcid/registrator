@@ -1,0 +1,157 @@
+<%= form_for(@client) do |f| %>
+  <% if @client.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@client.errors.count, "error") %> prohibited this client from being saved:</h2>
+
+      <ul>
+      <% @client.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nameOrFIO %><br>
+    <%= f.text_area :nameOrFIO %>
+  </div>
+  <div class="field">
+    <%= f.label :personType %><br>
+    <%= f.text_area :personType %>
+  </div>
+  <div class="field">
+    <%= f.label :phoneContractNumber %><br>
+    <%= f.number_field :phoneContractNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :internetContractNumber %><br>
+    <%= f.number_field :internetContractNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :phoneNumber %><br>
+    <%= f.text_area :phoneNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :faxNumber %><br>
+    <%= f.text_area :faxNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_area :email %>
+  </div>
+  <div class="field">
+    <%= f.label :representPosition %><br>
+    <%= f.text_area :representPosition %>
+  </div>
+  <div class="field">
+    <%= f.label :representFIO %><br>
+    <%= f.text_area :representFIO %>
+  </div>
+  <div class="field">
+    <%= f.label :contactPerson %><br>
+    <%= f.text_area :contactPerson %>
+  </div>
+  <div class="field">
+    <%= f.label :inn %><br>
+    <%= f.text_area :inn %>
+  </div>
+  <div class="field">
+    <%= f.label :kpp %><br>
+    <%= f.text_area :kpp %>
+  </div>
+  <div class="field">
+    <%= f.label :ogrn %><br>
+    <%= f.text_area :ogrn %>
+  </div>
+  <div class="field">
+    <%= f.label :okpo %><br>
+    <%= f.text_area :okpo %>
+  </div>
+  <div class="field">
+    <%= f.label :okonkh %><br>
+    <%= f.text_area :okonkh %>
+  </div>
+  <div class="field">
+    <%= f.label :okwed %><br>
+    <%= f.text_area :okwed %>
+  </div>
+  <div class="field">
+    <%= f.label :passportData %><br>
+    <%= f.text_area :passportData %>
+  </div>
+  <div class="field">
+    <%= f.label :legalAddress %><br>
+    <%= f.text_area :legalAddress %>
+  </div>
+  <div class="field">
+    <%= f.label :postAddress %><br>
+    <%= f.text_area :postAddress %>
+  </div>
+  <div class="field">
+    <%= f.label :connectionPointAddress %><br>
+    <%= f.text_area :connectionPointAddress %>
+  </div>
+  <div class="field">
+    <%= f.label :bankName %><br>
+    <%= f.text_area :bankName %>
+  </div>
+  <div class="field">
+    <%= f.label :bankBIK %><br>
+    <%= f.text_area :bankBIK %>
+  </div>
+  <div class="field">
+    <%= f.label :bankCorrAccount %><br>
+    <%= f.text_area :bankCorrAccount %>
+  </div>
+  <div class="field">
+    <%= f.label :currentAccount %><br>
+    <%= f.text_area :currentAccount %>
+  </div>
+  <div class="field">
+    <%= f.label :additionalInfo %><br>
+    <%= f.text_area :additionalInfo %>
+  </div>
+  <div class="field">
+    <%= f.label :placeOfBirth %><br>
+    <%= f.text_area :placeOfBirth %>
+  </div>
+  <div class="field">
+    <%= f.label :dateOfBirth %><br>
+    <%= f.date_select :dateOfBirth %>
+  </div>
+  <div class="field">
+    <%= f.label :persCabPhoneLogin %><br>
+    <%= f.text_area :persCabPhoneLogin %>
+  </div>
+  <div class="field">
+    <%= f.label :persCabPhonePasswd %><br>
+    <%= f.text_area :persCabPhonePasswd %>
+  </div>
+  <div class="field">
+    <%= f.label :persCabInternetLogin %><br>
+    <%= f.text_area :persCabInternetLogin %>
+  </div>
+  <div class="field">
+    <%= f.label :persCabInternetPasswd %><br>
+    <%= f.text_area :persCabInternetPasswd %>
+  </div>
+  <div class="field">
+    <%= f.label :benefitDocument %><br>
+    <%= f.text_area :benefitDocument %>
+  </div>
+  <div class="field">
+    <%= f.label :phoneContractDate %><br>
+    <%= f.date_select :phoneContractDate %>
+  </div>
+  <div class="field">
+    <%= f.label :internetContractDate %><br>
+    <%= f.date_select :internetContractDate %>
+  </div>
+  <div class="field">
+    <%= f.label :contractAcceptor %><br>
+    <%= f.text_area :contractAcceptor %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

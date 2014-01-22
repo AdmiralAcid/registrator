@@ -1,0 +1,117 @@
+<%= form_for(@order) do |f| %>
+  <% if @order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@order.errors.count, "error") %> prohibited this order from being saved:</h2>
+
+      <ul>
+      <% @order.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :orderNumber %><br>
+    <%= f.number_field :orderNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :utuSendingDate %><br>
+    <%= f.date_select :utuSendingDate %>
+  </div>
+  <div class="field">
+    <%= f.label :uasDate %><br>
+    <%= f.date_select :uasDate %>
+  </div>
+  <div class="field">
+    <%= f.label :performDate %><br>
+    <%= f.date_select :performDate %>
+  </div>
+  <div class="field">
+    <%= f.label :performer %><br>
+    <%= f.text_area :performer %>
+  </div>
+  <div class="field">
+    <%= f.label :applyNumber %><br>
+    <%= f.number_field :applyNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :contractNumber %><br>
+    <%= f.number_field :contractNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :service %><br>
+    <%= f.text_area :service %>
+  </div>
+  <div class="field">
+    <%= f.label :orderType %><br>
+    <%= f.text_area :orderType %>
+  </div>
+  <div class="field">
+    <%= f.label :cost %><br>
+    <%= f.text_field :cost %>
+  </div>
+  <div class="field">
+    <%= f.label :portsNumber %><br>
+    <%= f.text_area :portsNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :phoneNumber %><br>
+    <%= f.text_area :phoneNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :nameOrFIO %><br>
+    <%= f.text_area :nameOrFIO %>
+  </div>
+  <div class="field">
+    <%= f.label :street %><br>
+    <%= f.text_area :street %>
+  </div>
+  <div class="field">
+    <%= f.label :house %><br>
+    <%= f.number_field :house %>
+  </div>
+  <div class="field">
+    <%= f.label :building %><br>
+    <%= f.text_area :building %>
+  </div>
+  <div class="field">
+    <%= f.label :apartmentOrOffice %><br>
+    <%= f.number_field :apartmentOrOffice %>
+  </div>
+  <div class="field">
+    <%= f.label :floor %><br>
+    <%= f.number_field :floor %>
+  </div>
+  <div class="field">
+    <%= f.label :entrance %><br>
+    <%= f.number_field :entrance %>
+  </div>
+  <div class="field">
+    <%= f.label :responsiblePerson %><br>
+    <%= f.text_area :responsiblePerson %>
+  </div>
+  <div class="field">
+    <%= f.label :comments %><br>
+    <%= f.text_area :comments %>
+  </div>
+  <div class="field">
+    <%= f.label :contactData %><br>
+    <%= f.text_area :contactData %>
+  </div>
+  <div class="field">
+    <%= f.label :personType %><br>
+    <%= f.text_area :personType %>
+  </div>
+  <div class="field">
+    <%= f.label :formingDate %><br>
+    <%= f.date_select :formingDate %>
+  </div>
+  <div class="field">
+    <%= f.label :aoReturningDate %><br>
+    <%= f.date_select :aoReturningDate %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,55 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  orderNumber: 1
+  utuSendingDate: 2014-01-22
+  uasDate: 2014-01-22
+  performDate: 2014-01-22
+  performer: MyText
+  applyNumber: 1
+  contractNumber: 1
+  service: MyText
+  orderType: MyText
+  cost: 9.99
+  portsNumber: MyText
+  phoneNumber: MyText
+  nameOrFIO: MyText
+  street: MyText
+  house: 1
+  building: MyText
+  apartmentOrOffice: 1
+  floor: 1
+  entrance: 1
+  responsiblePerson: MyText
+  comments: MyText
+  contactData: MyText
+  personType: MyText
+  formingDate: 2014-01-22
+  aoReturningDate: 2014-01-22
+
+two:
+  orderNumber: 1
+  utuSendingDate: 2014-01-22
+  uasDate: 2014-01-22
+  performDate: 2014-01-22
+  performer: MyText
+  applyNumber: 1
+  contractNumber: 1
+  service: MyText
+  orderType: MyText
+  cost: 9.99
+  portsNumber: MyText
+  phoneNumber: MyText
+  nameOrFIO: MyText
+  street: MyText
+  house: 1
+  building: MyText
+  apartmentOrOffice: 1
+  floor: 1
+  entrance: 1
+  responsiblePerson: MyText
+  comments: MyText
+  contactData: MyText
+  personType: MyText
+  formingDate: 2014-01-22
+  aoReturningDate: 2014-01-22
