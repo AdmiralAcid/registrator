@@ -17,9 +17,9 @@ class CreateOrders < ActiveRecord::Migration
       t.text :street
       t.integer :house
       t.text :building
-      t.integer :apartmentOrOffice
-      t.integer :floor
-      t.integer :entrance
+      t.text :apartmentOrOffice
+      t.text :floor
+      t.text :entrance
       t.text :responsiblePerson
       t.text :comments
       t.text :contactData

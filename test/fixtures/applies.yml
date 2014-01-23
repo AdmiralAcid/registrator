@@ -2,88 +2,88 @@
 
 one:
   applyNumber: 1
-  phoneApplyDate: 2014-01-17
-  internetApplyDate: 2014-01-17
-  iptvApplyDate: 2014-01-17
+  phoneApplyDate: 2014-01-23
+  internetApplyDate: 2014-01-23
+  iptvApplyDate: 2014-01-23
   nameOrFIO: MyText
   street: MyText
   house: 1
   building: MyText
-  apartmentOrOffice: 1
-  floor: 1
-  entrance: 1
+  apartmentOrOffice: MyText
+  floor: MyText
+  entrance: MyText
   phoneApplyStatus: MyText
   internetApplyStatus: MyText
   iptvApplyStatus: MyText
   applyTreatedBy: MyText
-  plannedPhoneInstallDate: 2014-01-17
-  plannedInternetInstallDate: 2014-01-17
+  plannedPhoneInstallDate: 2014-01-23
+  plannedInternetInstallDate: 2014-01-23
   phoneComments: MyText
   internetComments: MyText
   phoneContractNumber: 1
-  phoneContractDate: 2014-01-17
-  phonePorts: 1
+  phoneContractDate: 2014-01-23
+  phonePorts: MyText
   phoneContractConcludedBy: MyText
-  phonePaymentDate: 2014-01-17
-  phoneDocsPassDate: 2014-01-17
-  phoneInstallDate: 2014-01-17
+  phonePaymentDate: 2014-01-23
+  phoneDocsPassDate: 2014-01-23
+  phoneInstallDate: 2014-01-23
   internetContractNumber: 1
-  internetContractDate: 2014-01-17
-  internetPorts: 1
+  internetContractDate: 2014-01-23
+  internetPorts: MyText
   internetContractConcludedBy: MyText
-  internetPaymentDate: 2014-01-17
-  internetDocsPassDate: 2014-01-17
-  internetInstallDate: 2014-01-17
+  internetPaymentDate: 2014-01-23
+  internetDocsPassDate: 2014-01-23
+  internetInstallDate: 2014-01-23
   iptvContractNumber: 1
-  iptvContractDate: 2014-01-17
-  iptvPorts: 1
+  iptvContractDate: 2014-01-23
+  iptvPorts: MyText
   iptvContractConcludedBy: MyText
-  iptvPaymentDate: 2014-01-17
-  iptvInstallDate: 2014-01-17
+  iptvPaymentDate: 2014-01-23
+  iptvInstallDate: 2014-01-23
   setToBox: false
   clientType: MyText
-  insertionDate: 2014-01-17
+  insertionDate: 2014-01-23
 
 two:
   applyNumber: 1
-  phoneApplyDate: 2014-01-17
-  internetApplyDate: 2014-01-17
-  iptvApplyDate: 2014-01-17
+  phoneApplyDate: 2014-01-23
+  internetApplyDate: 2014-01-23
+  iptvApplyDate: 2014-01-23
   nameOrFIO: MyText
   street: MyText
   house: 1
   building: MyText
-  apartmentOrOffice: 1
-  floor: 1
-  entrance: 1
+  apartmentOrOffice: MyText
+  floor: MyText
+  entrance: MyText
   phoneApplyStatus: MyText
   internetApplyStatus: MyText
   iptvApplyStatus: MyText
   applyTreatedBy: MyText
-  plannedPhoneInstallDate: 2014-01-17
-  plannedInternetInstallDate: 2014-01-17
+  plannedPhoneInstallDate: 2014-01-23
+  plannedInternetInstallDate: 2014-01-23
   phoneComments: MyText
   internetComments: MyText
   phoneContractNumber: 1
-  phoneContractDate: 2014-01-17
-  phonePorts: 1
+  phoneContractDate: 2014-01-23
+  phonePorts: MyText
   phoneContractConcludedBy: MyText
-  phonePaymentDate: 2014-01-17
-  phoneDocsPassDate: 2014-01-17
-  phoneInstallDate: 2014-01-17
+  phonePaymentDate: 2014-01-23
+  phoneDocsPassDate: 2014-01-23
+  phoneInstallDate: 2014-01-23
   internetContractNumber: 1
-  internetContractDate: 2014-01-17
-  internetPorts: 1
+  internetContractDate: 2014-01-23
+  internetPorts: MyText
   internetContractConcludedBy: MyText
-  internetPaymentDate: 2014-01-17
-  internetDocsPassDate: 2014-01-17
-  internetInstallDate: 2014-01-17
+  internetPaymentDate: 2014-01-23
+  internetDocsPassDate: 2014-01-23
+  internetInstallDate: 2014-01-23
   iptvContractNumber: 1
-  iptvContractDate: 2014-01-17
-  iptvPorts: 1
+  iptvContractDate: 2014-01-23
+  iptvPorts: MyText
   iptvContractConcludedBy: MyText
-  iptvPaymentDate: 2014-01-17
-  iptvInstallDate: 2014-01-17
+  iptvPaymentDate: 2014-01-23
+  iptvInstallDate: 2014-01-23
   setToBox: false
   clientType: MyText
-  insertionDate: 2014-01-17
+  insertionDate: 2014-01-23
