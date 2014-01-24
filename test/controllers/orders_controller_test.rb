@@ -3,6 +3,33 @@ require 'test_helper'
 class OrdersControllerTest < ActionController::TestCase
   setup do
     @order = orders(:one)
+    @update = {
+      orderNumber: 235,
+      utuSendingDate: "2013-07-08",
+      #uasDate: "2013-08-07",
+      performDate: "2013-03-04",
+      performer: "Джа Джа Бинкс",
+      applyNumber: 291,
+      contractNumber: 388,
+      service: "IPTV",
+      orderType: "замена номера",
+      cost: 456.0,
+      portsNumber: "5+1",
+      phoneNumber: "+79144678345;+79140093236",
+      nameOrFIO: "Грендель Зигфрид Беовульфыч",
+      street: "ул. Пионерская",
+      house: 10,
+      building: "А",
+      apartmentOrOffice: 10,
+      floor: 2,
+      #entrance: 1,
+      responsiblePerson: "Оби Ван Кеноби",
+      comments: "да пребудет с нами сила",
+      contactData: "пейджер Оби Вана: 15-09",
+      personType: "Физ лицо",
+      formingDate: "2013-11-13",
+      aoReturningDate: "2015-01-16"
+    }
   end
 
   test "should get index" do
@@ -18,7 +45,7 @@ class OrdersControllerTest < ActionController::TestCase
 
   test "should create order" do
     assert_difference('Order.count') do
-      post :create, order: { aoReturningDate: @order.aoReturningDate, apartmentOrOffice: @order.apartmentOrOffice, applyNumber: @order.applyNumber, building: @order.building, comments: @order.comments, contactData: @order.contactData, contractNumber: @order.contractNumber, cost: @order.cost, entrance: @order.entrance, floor: @order.floor, formingDate: @order.formingDate, house: @order.house, nameOrFIO: @order.nameOrFIO, orderNumber: @order.orderNumber, orderType: @order.orderType, performDate: @order.performDate, performer: @order.performer, personType: @order.personType, phoneNumber: @order.phoneNumber, portsNumber: @order.portsNumber, responsiblePerson: @order.responsiblePerson, service: @order.service, street: @order.street, uasDate: @order.uasDate, utuSendingDate: @order.utuSendingDate }
+      post :create, order: @update
     end
 
     assert_redirected_to order_path(assigns(:order))
@@ -35,7 +62,7 @@ class OrdersControllerTest < ActionController::TestCase
   end
 
   test "should update order" do
-    patch :update, id: @order, order: { aoReturningDate: @order.aoReturningDate, apartmentOrOffice: @order.apartmentOrOffice, applyNumber: @order.applyNumber, building: @order.building, comments: @order.comments, contactData: @order.contactData, contractNumber: @order.contractNumber, cost: @order.cost, entrance: @order.entrance, floor: @order.floor, formingDate: @order.formingDate, house: @order.house, nameOrFIO: @order.nameOrFIO, orderNumber: @order.orderNumber, orderType: @order.orderType, performDate: @order.performDate, performer: @order.performer, personType: @order.personType, phoneNumber: @order.phoneNumber, portsNumber: @order.portsNumber, responsiblePerson: @order.responsiblePerson, service: @order.service, street: @order.street, uasDate: @order.uasDate, utuSendingDate: @order.utuSendingDate }
+    patch :update, id: @order, order: @update
     assert_redirected_to order_path(assigns(:order))
   end
 

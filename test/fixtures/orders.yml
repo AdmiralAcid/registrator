@@ -53,3 +53,30 @@ two:
   personType: MyText
   formingDate: 2014-01-22
   aoReturningDate: 2014-01-22
+
+new_world_order:
+  orderNumber: 1234
+  utuSendingDate: 2013-07-08
+  uasDate: 2013-08-07
+  performDate: 2013-09-01
+  performer: VOLDEMORT
+  applyNumber: 1357
+  contractNumber: 9876
+  service: Канал
+  orderType: Демонтаж
+  cost: 456.80
+  portsNumber: 1+1
+  phoneNumber: +79144196567
+  nameOrFIO: Death Eaters Inc.
+  street: Grimo St.
+  house: 13
+  building: A
+  apartmentOrOffice: 21
+  floor: 2
+  entrance: 1
+  responsiblePerson: Malfoy
+  comments: dirtbloods!
+  contactData: nowhere
+  personType: Юр лицо
+  formingDate: 2013-11-11
+  aoReturningDate: 2014-01-16

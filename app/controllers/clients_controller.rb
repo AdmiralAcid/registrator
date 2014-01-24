@@ -69,6 +69,6 @@ class ClientsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def client_params
-      params.require(:client).permit(:nameOrFIO, :personType, :phoneContractNumber, :internetContracNumber, :phoneNumber, :faxNumber, :email, :representPosition, :representFIO, :contactPerson, :inn, :kpp, :ogrn, :okpo, :okonkh, :okwed, :passportData, :legalAddress, :postAddress, :connectionPointAddress, :bankName, :bankBIK, :bankCorrAccount, :currentAccount, :additionalInfo, :placeOfBirth, :dateOfBirth, :persCabPhoneLogin, :persCabPhonePasswd, :persCabInternetLogin, :persCabInternetPasswd, :benefitDocument, :phoneContractDate, :internetContractDate, :contractAcceptor)
+      params.require(:client).permit(:nameOrFIO, :personType, :phoneContractNumber, :internetContractNumber, :phoneNumber, :faxNumber, :email, :representPosition, :representFIO, :contactPerson, :inn, :kpp, :ogrn, :okpo, :okonkh, :okwed, :passportData, :legalAddress, :postAddress, :connectionPointAddress, :bankName, :bankBIK, :bankCorrAccount, :currentAccount, :additionalInfo, :placeOfBirth, :dateOfBirth, :persCabPhoneLogin, :persCabPhonePasswd, :persCabInternetLogin, :persCabInternetPasswd, :benefitDocument, :phoneContractDate, :internetContractDate, :contractAcceptor)
     end
 end

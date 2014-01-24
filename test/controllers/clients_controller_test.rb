@@ -3,6 +3,43 @@ require 'test_helper'
 class ClientsControllerTest < ActionController::TestCase
   setup do
     @client = clients(:one)
+    @update = {
+      nameOrFIO: "Каприо Леонардо Ди",
+      personType: "Физ лицо",
+      phoneContractNumber: 145,
+      internetContractNumber: 789,
+      phoneNumber: "+79141774577",
+      #faxNumber: "11111",
+      email: "leon68@mail.ru",
+      representPosition: "Режиссер",
+      #representFIO: "Джон Филиппс",
+      contactPerson: "Джонни",
+      inn: "124667",
+      kpp: "844434434",
+      ogrn: "866483",
+      okpo: "0985",
+      okonkh: "6558494",
+      okwed: "37.55.12.",
+      passportData: "US Citizenship",
+      legalAddress: "Miami",
+      postAddress: "Miami, Leo D residence",
+      #connectionPointAddress: "Москва, ул. Академика Королева",
+      bankName: "Сбербанк",
+      bankBIK: "029366847",
+      bankCorrAccount: "68475766",
+      currentAccount: "27223667",
+      #additionalInfo: "nothing to add",
+      #placeOfBirth: "г. Хабаровск",
+      dateOfBirth: "1968-01-10",
+      persCabPhoneLogin: "leon68",
+      persCabPhonePasswd: "qwerty12345d",
+      persCabInternetLogin: "kapriod",
+      persCabInternetPasswd: "osscar",
+      #benefitDocument: "Удостоверение ветерана труда",
+      phoneContractDate: "2013-10-14",
+      internetContractDate: "2013-10-14",
+      contractAcceptor: "Васильев Василий Васильевич"
+    }
   end
 
   test "should get index" do
@@ -18,7 +55,7 @@ class ClientsControllerTest < ActionController::TestCase
 
   test "should create client" do
     assert_difference('Client.count') do
-      post :create, client: { additionalInfo: @client.additionalInfo, bankBIK: @client.bankBIK, bankCorrAccount: @client.bankCorrAccount, bankName: @client.bankName, benefitDocument: @client.benefitDocument, connectionPointAddress: @client.connectionPointAddress, contactPerson: @client.contactPerson, contractAcceptor: @client.contractAcceptor, currentAccount: @client.currentAccount, dateOfBirth: @client.dateOfBirth, email: @client.email, faxNumber: @client.faxNumber, inn: @client.inn, internetContracNumber: @client.internetContracNumber, internetContractDate: @client.internetContractDate, kpp: @client.kpp, legalAddress: @client.legalAddress, nameOrFIO: @client.nameOrFIO, ogrn: @client.ogrn, okonkh: @client.okonkh, okpo: @client.okpo, okwed: @client.okwed, passportData: @client.passportData, persCabInternetLogin: @client.persCabInternetLogin, persCabInternetPasswd: @client.persCabInternetPasswd, persCabPhoneLogin: @client.persCabPhoneLogin, persCabPhonePasswd: @client.persCabPhonePasswd, personType: @client.personType, phoneContractDate: @client.phoneContractDate, phoneContractNumber: @client.phoneContractNumber, phoneNumber: @client.phoneNumber, placeOfBirth: @client.placeOfBirth, postAddress: @client.postAddress, representFIO: @client.representFIO, representPosition: @client.representPosition }
+      post :create, client: @update
     end
 
     assert_redirected_to client_path(assigns(:client))
@@ -35,7 +72,7 @@ class ClientsControllerTest < ActionController::TestCase
   end
 
   test "should update client" do
-    patch :update, id: @client, client: { additionalInfo: @client.additionalInfo, bankBIK: @client.bankBIK, bankCorrAccount: @client.bankCorrAccount, bankName: @client.bankName, benefitDocument: @client.benefitDocument, connectionPointAddress: @client.connectionPointAddress, contactPerson: @client.contactPerson, contractAcceptor: @client.contractAcceptor, currentAccount: @client.currentAccount, dateOfBirth: @client.dateOfBirth, email: @client.email, faxNumber: @client.faxNumber, inn: @client.inn, internetContracNumber: @client.internetContracNumber, internetContractDate: @client.internetContractDate, kpp: @client.kpp, legalAddress: @client.legalAddress, nameOrFIO: @client.nameOrFIO, ogrn: @client.ogrn, okonkh: @client.okonkh, okpo: @client.okpo, okwed: @client.okwed, passportData: @client.passportData, persCabInternetLogin: @client.persCabInternetLogin, persCabInternetPasswd: @client.persCabInternetPasswd, persCabPhoneLogin: @client.persCabPhoneLogin, persCabPhonePasswd: @client.persCabPhonePasswd, personType: @client.personType, phoneContractDate: @client.phoneContractDate, phoneContractNumber: @client.phoneContractNumber, phoneNumber: @client.phoneNumber, placeOfBirth: @client.placeOfBirth, postAddress: @client.postAddress, representFIO: @client.representFIO, representPosition: @client.representPosition }
+    patch :update, id: @client, client: @update
     assert_redirected_to client_path(assigns(:client))
   end
 

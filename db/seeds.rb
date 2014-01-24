@@ -166,7 +166,7 @@ Order.create!(
 	responsiblePerson: "Ответственный Игорь Семенович",
 	comments: "нет, вы видали? вот это фамилия у него!",
 	contactData: "дом.тел. Ответственного: 14-15-26",
-	personType: "Юр. лицо",
+	personType: "Юр лицо",
 	formingDate: "2013-11-11",
 	aoReturningDate: "2014-01-16"
 	)
@@ -194,7 +194,7 @@ Order.create!(
 	responsiblePerson: "Витя Кабан",
 	comments: "Как кабель в страну асов потянем?",
 	contactData: "пейджер Кабана: 14-15-09",
-	personType: "Физ. лицо",
+	personType: "Физ лицо",
 	formingDate: "2013-11-13",
 	aoReturningDate: "2014-01-16"
 	)
@@ -222,14 +222,14 @@ Order.create!(
 	responsiblePerson: "Витек",
 	comments: "дочерняя компания Нефтьгазстройречверфькрайсервиса",
 	contactData: "факс: 14-15-76",
-	personType: "Юр. лицо",
+	personType: "Юр лицо",
 	formingDate: "2013-11-16",
 	aoReturningDate: "2014-01-26"
 	)
 
 Client.create!(
 	nameOrFIO: "Иванов Иван Иванович",
-	personType: "Физ. Лицо",
+	personType: "Физ лицо",
 	phoneContractNumber: 12345,
 	internetContractNumber: 6789,
 	phoneNumber: "+79141234567",
@@ -267,7 +267,7 @@ Client.create!(
 
 Client.create!(
 	nameOrFIO: "Айдол Уильям",
-	personType: "Физ. Лицо",
+	personType: "Физ лицо",
 	phoneContractNumber: 8634,
 	internetContractNumber: 886633,
 	phoneNumber: "+79141234567",
@@ -305,7 +305,7 @@ Client.create!(
 
 Client.create!(
 	nameOrFIO: "ООО Мурка",
-	personType: "Юр. Лицо",
+	personType: "Юр лицо",
 	phoneContractNumber: 4345,
 	internetContractNumber: 7789,
 	phoneNumber: "+79141234567; 34-34-56",
