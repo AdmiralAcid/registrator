@@ -73,3 +73,40 @@ two:
   phoneContractDate: 2014-01-24
   internetContractDate: 2014-01-24
   contractAcceptor: MyText
+
+another_client:
+  nameOrFIO: Иванов Иван Иванович
+  personType: Физ лицо
+  phoneContractNumber: 12345
+  internetContractNumber: 6789
+  phoneNumber: +79141234567
+  faxNumber: 11111
+  email: ivanov@ivan.ru
+  representPosition: Директор
+  representFIO: Александров Александр Александрович
+  contactPerson: Федя
+  inn: 124667
+  kpp: 848434434
+  ogrn: 8949483
+  okpo: 09876
+  okonkh: 65758494
+  okwed: 34.65.12.
+  passportData: выдан неизвестно где и непонятно при каких обстоятельствах
+  legalAddress: тридевятое царство дом 20
+  postAddress: седьмое королевство 670012
+  connectionPointAddress: Москва ул. Академика Королева
+  bankName: Сбербанк
+  bankBIK: 029394847
+  bankCorrAccount: 8475766
+  currentAccount: 23445667
+  additionalInfo: nothing to add
+  placeOfBirth: г. Хабаровск
+  dateOfBirth: 1965-01-10
+  persCabPhoneLogin: vanya65
+  persCabPhonePasswd: qwerty12345
+  persCabInternetLogin: vanio1965
+  persCabInternetPasswd: vanIvan11
+  benefitDocument: Удостоверение ветерана труда
+  phoneContractDate: 2013-10-14
+  internetContractDate: 2013-10-14
+  contractAcceptor: Васильев Василий Васильевич

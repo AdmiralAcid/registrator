@@ -87,3 +87,47 @@ two:
   setToBox: false
   clientType: MyText
   insertionDate: 2014-01-23
+
+another_apply:
+  applyNumber: 291
+  phoneApplyDate: 2012-12-28
+  internetApplyDate: 2012-12-28
+  iptvApplyDate: 2012-12-28
+  nameOrFIO: Петров Петр Петрович
+  street: ул.Волочаевская
+  house: 8
+  building: А
+  apartmentOrOffice: 164
+  floor: 3
+  entrance: 1
+  phoneApplyStatus: Установка
+  internetApplyStatus: Установка
+  iptvApplyStatus: Установка
+  applyTreatedBy: Петрова Петра Петровна
+  plannedPhoneInstallDate: 2012-12-30
+  plannedInternetInstallDate: 2012-12-30
+  phoneComments: установить любой ценой
+  internetComments: установить за любую цену
+  phoneContractNumber: 888634
+  phoneContractDate: 2012-12-28
+  phonePorts: 7
+  phoneContractConcludedBy: Петрова Петра Петровна
+  phonePaymentDate: 2012-12-28
+  phoneDocsPassDate: 2012-12-31
+  phoneInstallDate: 2013-01-12
+  internetContractNumber: 886633
+  internetContractDate: 2012-12-28
+  internetPorts: 13
+  internetContractConcludedBy: Петрова Петра Петровна
+  internetPaymentDate: 2012-12-28
+  internetDocsPassDate: 2012-12-31
+  internetInstallDate: 2013-01-12
+  iptvContractNumber: 88863
+  iptvContractDate: 2012-12-28
+  iptvPorts: 3
+  iptvContractConcludedBy: Петрова Петра Петровна
+  iptvPaymentDate: 2012-12-28
+  iptvInstallDate: 2013-01-12
+  setToBox: true
+  clientType: Физ лицо
+  insertionDate: 2013-01-24
