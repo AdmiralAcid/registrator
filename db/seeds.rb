@@ -152,7 +152,7 @@ Order.create!(
 	applyNumber: 11876,
 	contractNumber: 8834,
 	service: "Канал",
-	orderType: "Демонтаж",
+	orderType: "демонтаж",
 	cost: 4456.80,
 	portsNumber: "1+1",
 	phoneNumber: "+791441967345 рабочий",

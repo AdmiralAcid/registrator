@@ -1,0 +1,128 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+body {
+	margin: 0;
+	padding: 0;
+} 
+
+ul {
+	margin: 0;
+	padding: 6px;
+}
+
+li.shadow {
+	margin: 0;
+	border-radius: 3px;
+	padding: 4px 6px;
+	font-size: 1.2em;
+	display: inline;
+	position: relative;
+}
+
+li.shadow:hover {
+	-moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+	-webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+}
+
+#interface_container {
+	background-image: url("bgtex5.jpg");
+}
+
+#interface_container a {
+	text-decoration: none;
+}
+
+#interface_container a:visited {
+	color: #000;
+}
+
+#menu {
+	padding-bottom: 1px;
+	padding-top: 2px;
+	text-shadow: 0px 1px 0px #FFF;
+}
+
+#menu ul li img {
+	vertical-align: middle;
+	padding-left: 4px;
+}
+
+#menu ul li a:hover {
+	background-color: transparent;
+}
+
+/* не используется */
+#blue a:visited {
+	color: #359fe2;
+}
+/*-----------------*/
+
+#menu ul li:hover ul {
+	display: block;
+}
+
+/* WHY!? WHY THE HELL!? left is necessary?!?!?*/
+#help {
+	display: none;
+	position: absolute;
+	left: 0px;
+	top: 26px;
+	width: 125px;
+}
+
+#service {
+	display: none;
+	position: absolute;
+	left: 0px;
+	top: 26px;
+	width: 315px;
+}
+
+#files {
+	display: none;
+	position: absolute;
+	left: 0px;
+	top: 26px;
+	width: 135px;
+}
+
+#personal {
+	display: none;
+	position: absolute;
+	top: 26px;
+	width: 145px;
+}
+
+#menu ul ul {
+	background-image: url("bgtex5.jpg");
+	font-size: 1em;
+	text-align: left;
+	padding: 1px;
+	-moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+	-webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+}
+
+#menu ul ul li {
+	display: block;
+	padding: 4px;
+	padding-left: 6px;
+	padding-top: 6px;
+}
+
+#menu ul ul li:hover {
+	background-color: rgba(33, 160, 185, 0.3);
+}
