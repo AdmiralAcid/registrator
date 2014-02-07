@@ -16,64 +16,60 @@ body {
 	margin: 0;
 	padding: 0;
 } 
-
 ul {
 	margin: 0;
 	padding: 6px;
 }
-
+#interface_container {
+	background-image: url("bgtex5.jpg");
+}
+#interface_container a {
+	text-decoration: none;
+	/*font-family: "Bebas Neue Bold";
+	font-size: 1.1em;
+	letter-spacing: 2px;*/
+}
+#interface_container a:visited {
+	color: #000;
+}
 li.shadow {
 	margin: 0;
-	border-radius: 3px;
+	border-radius: 2px;
 	padding: 4px 6px;
-	font-size: 1.2em;
+	font-size: 16px;
 	display: inline;
 	position: relative;
 }
-
 li.shadow:hover {
 	-moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
 	-webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
 	box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
 }
 
-#interface_container {
-	background-image: url("bgtex5.jpg");
-}
 
-#interface_container a {
-	text-decoration: none;
-}
-
-#interface_container a:visited {
-	color: #000;
-}
-
+/*--------~= M-E-N-U =~------------*/
+/*.................................*/
 #menu {
-	padding-bottom: 1px;
-	padding-top: 2px;
+	padding-bottom: 0px;
+	padding-top: 0px;
 	text-shadow: 0px 1px 0px #FFF;
+	border-bottom: 1px solid #999;
 }
-
 #menu ul li img {
 	vertical-align: middle;
 	padding-left: 4px;
 }
-
 #menu ul li a:hover {
 	background-color: transparent;
 }
-
 /* не используется */
 #blue a:visited {
 	color: #359fe2;
 }
 /*-----------------*/
-
 #menu ul li:hover ul {
 	display: block;
 }
-
 /* WHY!? WHY THE HELL!? left is necessary?!?!?*/
 #help {
 	display: none;
@@ -82,7 +78,6 @@ li.shadow:hover {
 	top: 26px;
 	width: 125px;
 }
-
 #service {
 	display: none;
 	position: absolute;
@@ -90,7 +85,6 @@ li.shadow:hover {
 	top: 26px;
 	width: 315px;
 }
-
 #files {
 	display: none;
 	position: absolute;
@@ -98,31 +92,65 @@ li.shadow:hover {
 	top: 26px;
 	width: 135px;
 }
-
 #personal {
 	display: none;
 	position: absolute;
 	top: 26px;
 	width: 145px;
 }
-
 #menu ul ul {
 	background-image: url("bgtex5.jpg");
-	font-size: 1em;
+	font-size: 15px;
 	text-align: left;
 	padding: 1px;
 	-moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
 	-webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
 	box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
 }
-
 #menu ul ul li {
 	display: block;
 	padding: 4px;
 	padding-left: 6px;
 	padding-top: 6px;
 }
-
 #menu ul ul li:hover {
-	background-color: rgba(33, 160, 185, 0.3);
+	background-color: rgba(33, 160, 185, 0.35);
+	/*background-color: rgba(185, 27, 30, 0.35);*/
+}
+/*--------=============-----------*/
+
+
+/*------~= I-N-S-T-R-U-M-E-N-T-S =~-----*/
+#instruments {
+	padding: 0px;
+	margin: 0px;
+}
+#instruments ul {
+	padding: 0px;
+	padding-left: 6px;
+	margin: 0px;
+}
+li.button {
+	display: inline-block;
+	border-radius: 2px;
+	padding: 1px 3px;
+	padding-top: 3px;
+	margin: 1px 0px;
+}
+li.button:hover {
+	-moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.95);
+	-webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.95);
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.95);
+}
+#instruments ul li img {
+	padding: 0px;
+	margin: 0px;
+	vertical-align: middle;
+}
+
+li.divider {
+	padding: 1px 0px;
+	margin: 0px;
+	margin: 0px;
+	display: inline-block;
 }
