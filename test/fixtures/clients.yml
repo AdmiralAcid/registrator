@@ -2,7 +2,7 @@
 
 one:
   nameOrFIO: MyText
-  personType: MyText
+  clientType_id: 1
   phoneContractNumber: 1
   internetContractNumber: 1
   phoneNumber: MyText
@@ -39,7 +39,7 @@ one:
 
 two:
   nameOrFIO: MyText
-  personType: MyText
+  clientType_id: 1
   phoneContractNumber: 1
   internetContractNumber: 1
   phoneNumber: MyText
@@ -76,7 +76,7 @@ two:
 
 another_client:
   nameOrFIO: Иванов Иван Иванович
-  personType: Физ лицо
+  clientType_id: 2
   phoneContractNumber: 12345
   internetContractNumber: 6789
   phoneNumber: +79141234567

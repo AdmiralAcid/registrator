@@ -5,7 +5,7 @@ class ClientsControllerTest < ActionController::TestCase
     @client = clients(:one)
     @update = {
       nameOrFIO: "Каприо Леонардо Ди",
-      personType: "Физ лицо",
+      clientType_id: 2,
       phoneContractNumber: 145,
       internetContractNumber: 789,
       phoneNumber: "+79141774577",

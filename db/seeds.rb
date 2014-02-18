@@ -8,6 +8,128 @@
 Apply.delete_all
 Order.delete_all
 Client.delete_all
+ApplyStatus.delete_all
+ClientType.delete_all
+Service.delete_all
+OrderType.delete_all
+
+ApplyStatus.create!(
+	status: "Установка")
+
+ApplyStatus.create!(
+	status: "Проверка")
+
+ApplyStatus.create!(
+	status: "В работе")
+
+ApplyStatus.create!(
+	status: "Отказ")
+
+ApplyStatus.create!(
+	status: "Отложено")
+
+ApplyStatus.create!(
+	status: "Очередь")
+
+ClientType.create!(
+	client: "Юр лицо")
+
+ClientType.create!(
+	client: "Физ лицо")
+
+ClientType.create!(
+	client: "Физ лицо в нежилом помещении")
+
+ClientType.create!(
+	client: "Корпоративный")
+
+ClientType.create!(
+	client: "Другой")
+
+Service.create!(
+	service: "IPTV")
+
+Service.create!(
+	service: "Интернет")
+
+Service.create!(
+	service: "Интернет/IPTV")
+
+Service.create!(
+	service: "Канал")
+
+Service.create!(
+	service: "Роутер")
+
+Service.create!(
+	service: "Тел/Инт")
+
+Service.create!(
+	service: "Тел/Инт/IPTV")
+
+Service.create!(
+	service: "Телефон")
+
+Service.create!(
+	service: "Телефон/IPTV")
+
+Service.create!(
+	service: "Эфирное ТВ")
+
+OrderType.create!(
+	order: "Демонтаж")
+
+OrderType.create!(
+	order: "Замена номера")
+
+OrderType.create!(
+	order: "Изменение параметров")
+
+OrderType.create!(
+	order: "Перенос")
+
+OrderType.create!(
+	order: "Перенос розетки")
+
+OrderType.create!(
+	order: "Проверка")
+
+OrderType.create!(
+	order: "Проверка переноса")
+
+OrderType.create!(
+	order: "Проверка смены технологии")
+
+OrderType.create!(
+	order: "Прокладка кабеля")
+
+OrderType.create!(
+	order: "Резервирование")
+
+OrderType.create!(
+	order: "Сигнализация")
+
+OrderType.create!(
+	order: "Смена тарифа")
+
+OrderType.create!(
+	order: "Смена технологии")
+
+OrderType.create!(
+	order: "Снятие")
+
+OrderType.create!(
+	order: "Снятие доп.линии")
+
+OrderType.create!(
+	order: "Снятие порта с резерва")
+
+OrderType.create!(
+	order: "Установка")
+
+OrderType.create!(
+	order: "Установка розетки")
+
 Apply.create!(
 	applyNumber: 29116, 
 	phoneApplyDate: "2012-12-28", 
@@ -20,9 +142,9 @@ Apply.create!(
 	apartmentOrOffice: "164", 
 	floor: "3", 
 	entrance: "1", 
-	phoneApplyStatus: "Установка", 
-	internetApplyStatus: "Установка", 
-	iptvApplyStatus: "Установка", 
+	phoneApplyStatus: 1, 
+	internetApplyStatus: 1, 
+	iptvApplyStatus: 1, 
 	applyTreatedBy: "Петрова Петра Петровна", 
 	plannedPhoneInstallDate: "2012-12-30", 
 	plannedInternetInstallDate: "2012-12-30", 
@@ -49,7 +171,7 @@ Apply.create!(
 	iptvPaymentDate: "2012-12-28", 
 	iptvInstallDate: "2013-01-12", 
 	setToBox: "true", 
-	clientType: "Физ лицо", 
+	clientType_id: 2, 
 	insertionDate: "2013-01-24"
 	)
 
@@ -65,9 +187,9 @@ Apply.create!(
 	apartmentOrOffice: "2", 
 	floor: "16", 
 	#entrance: 1, 
-	phoneApplyStatus: "Проверка", 
-	internetApplyStatus: "В работе", 
-	iptvApplyStatus: "Установка", 
+	phoneApplyStatus: 2, 
+	internetApplyStatus: 3, 
+	iptvApplyStatus: 1, 
 	applyTreatedBy: "Омен Екатерина Продиджевна", 
 	plannedPhoneInstallDate: "2013-02-17", 
 	plannedInternetInstallDate: "2013-02-17", 
@@ -94,7 +216,7 @@ Apply.create!(
 	iptvPaymentDate: "2012-12-28", 
 	iptvInstallDate: "2013-01-12", 
 	#setToBox: "true", 
-	clientType: "Юр лицо", 
+	clientType_id: 1, 
 	insertionDate: "2013-01-24"
 	)
 
@@ -110,9 +232,9 @@ Apply.create!(
 	apartmentOrOffice: "16", 
 	floor: "12", 
 	#entrance: 1, 
-	phoneApplyStatus: "Установка", 
-	internetApplyStatus: "Установка", 
-	iptvApplyStatus: "В работе", 
+	phoneApplyStatus: 1, 
+	internetApplyStatus: 1, 
+	iptvApplyStatus: 4, 
 	applyTreatedBy: "Андромедова Персея Орионовна", 
 	#plannedPhoneInstallDate: "2012-12-30", 
 	plannedInternetInstallDate: "2014-06-18", 
@@ -139,7 +261,7 @@ Apply.create!(
 	#iptvPaymentDate: "2012-12-28", 
 	#iptvInstallDate: "2013-01-12", 
 	setToBox: "true", 
-	clientType: "Физ лицо", 
+	clientType_id: 3, 
 	insertionDate: "2013-01-24"
 	)
 
@@ -151,8 +273,8 @@ Order.create!(
 	performer: "Огородник Макар Матрасыч",
 	applyNumber: 11876,
 	contractNumber: 8834,
-	service: "Канал",
-	orderType: "демонтаж",
+	service_id: 4,
+	orderType_id: 3,
 	cost: 4456.80,
 	portsNumber: "1+1",
 	phoneNumber: "+791441967345 рабочий",
@@ -166,7 +288,7 @@ Order.create!(
 	responsiblePerson: "Ответственный Игорь Семенович",
 	comments: "нет, вы видали? вот это фамилия у него!",
 	contactData: "дом.тел. Ответственного: 14-15-26",
-	personType: "Юр лицо",
+	clientType_id: 1,
 	formingDate: "2013-11-11",
 	aoReturningDate: "2014-01-16"
 	)
@@ -179,8 +301,8 @@ Order.create!(
 	performer: "Джа Джа Бинкс",
 	applyNumber: 29188,
 	contractNumber: 88,
-	service: "Телефон",
-	orderType: "проверка переноса",
+	service_id: 6,
+	orderType_id: 11,
 	cost: 1456.0,
 	portsNumber: "5+1",
 	phoneNumber: "+79144678345;+79142323236",
@@ -194,7 +316,7 @@ Order.create!(
 	responsiblePerson: "Витя Кабан",
 	comments: "Как кабель в страну асов потянем?",
 	contactData: "пейджер Кабана: 14-15-09",
-	personType: "Физ лицо",
+	clientType_id: 1,
 	formingDate: "2013-11-13",
 	aoReturningDate: "2014-01-16"
 	)
@@ -207,8 +329,8 @@ Order.create!(
 	performer: "Санек",
 	applyNumber: 1187,
 	contractNumber: 1488,
-	service: "IPTV",
-	orderType: "снятие",
+	service_id: 7,
+	orderType_id: 9,
 	#cost: 4456.80,
 	portsNumber: "11",
 	phoneNumber: "-",
@@ -222,14 +344,14 @@ Order.create!(
 	responsiblePerson: "Витек",
 	comments: "дочерняя компания Нефтьгазстройречверфькрайсервиса",
 	contactData: "факс: 14-15-76",
-	personType: "Юр лицо",
+	clientType_id: 2,
 	formingDate: "2013-11-16",
 	aoReturningDate: "2014-01-26"
 	)
 
 Client.create!(
 	nameOrFIO: "Иванов Иван Иванович",
-	personType: "Физ лицо",
+	clientType_id: 2,
 	phoneContractNumber: 12345,
 	internetContractNumber: 6789,
 	phoneNumber: "+79141234567",
@@ -267,7 +389,7 @@ Client.create!(
 
 Client.create!(
 	nameOrFIO: "Айдол Уильям",
-	personType: "Физ лицо",
+	clientType_id: 5,
 	phoneContractNumber: 8634,
 	internetContractNumber: 886633,
 	phoneNumber: "+79141234567",
@@ -305,7 +427,7 @@ Client.create!(
 
 Client.create!(
 	nameOrFIO: "ООО Мурка",
-	personType: "Юр лицо",
+	clientType_id: 4,
 	phoneContractNumber: 4345,
 	internetContractNumber: 7789,
 	phoneNumber: "+79141234567; 34-34-56",

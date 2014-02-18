@@ -4,7 +4,7 @@
   <thead>
     <tr>
       <th>Nameorfio</th>
-      <th>Persontype</th>
+      <th>Clienttype</th>
       <th>Phonecontractnumber</th>
       <th>Internetcontractnumber</th>
       <th>Phonenumber</th>
@@ -48,7 +48,7 @@
     <% @clients.each do |client| %>
       <tr<%= cycle(" class=\"grey_row\"".html_safe, nil) %>>
         <td><%= client.nameOrFIO %></td>
-        <td><%= client.personType %></td>
+        <td><%= ClientType.find(client.clientType_id).client %></td>
         <td><%= client.phoneContractNumber %></td>
         <td><%= client.internetContractNumber %></td>
         <td><%= client.phoneNumber %></td>

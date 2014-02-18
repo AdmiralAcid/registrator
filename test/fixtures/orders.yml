@@ -8,8 +8,8 @@ one:
   performer: MyText
   applyNumber: 1
   contractNumber: 1
-  service: MyText
-  orderType: MyText
+  service_id: 1
+  orderType_id: 1
   cost: 9.99
   portsNumber: MyText
   phoneNumber: MyText
@@ -23,7 +23,7 @@ one:
   responsiblePerson: MyText
   comments: MyText
   contactData: MyText
-  personType: MyText
+  clientType_id: 1
   formingDate: 2014-01-22
   aoReturningDate: 2014-01-22
 
@@ -35,8 +35,8 @@ two:
   performer: MyText
   applyNumber: 1
   contractNumber: 1
-  service: MyText
-  orderType: MyText
+  service_id: 1
+  orderType_id: ext
   cost: 9.99
   portsNumber: MyText
   phoneNumber: MyText
@@ -50,7 +50,7 @@ two:
   responsiblePerson: MyText
   comments: MyText
   contactData: MyText
-  personType: MyText
+  clientType_id: 1
   formingDate: 2014-01-22
   aoReturningDate: 2014-01-22
 
@@ -62,8 +62,8 @@ new_world_order:
   performer: VOLDEMORT
   applyNumber: 1357
   contractNumber: 9876
-  service: Канал
-  orderType: Демонтаж
+  service_id: 4
+  orderType_id: 11
   cost: 456.80
   portsNumber: 1+1
   phoneNumber: +79144196567
@@ -77,6 +77,6 @@ new_world_order:
   responsiblePerson: Malfoy
   comments: dirtbloods!
   contactData: nowhere
-  personType: Юр лицо
+  clientType_id: 2
   formingDate: 2013-11-11
   aoReturningDate: 2014-01-16

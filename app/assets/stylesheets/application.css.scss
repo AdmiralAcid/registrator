@@ -20,8 +20,16 @@ ul {
 	margin: 0;
 	padding: 6px;
 }
+#tableframe {
+	min-width: 1024px;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	overflow: scroll;
+}
 #interface_container {
 	background-image: url("bgtex5.jpg");
+	/*position: fixed;*/
 }
 #interface_container a {
 	text-decoration: none;
@@ -117,6 +125,9 @@ li.shadow:hover {
 	background-color: rgba(33, 160, 185, 0.35);
 	/*background-color: rgba(185, 27, 30, 0.35);*/
 }
+#menu ul ul li a:hover {
+	color: black;
+}
 /*--------=============-----------*/
 
 
@@ -124,6 +135,7 @@ li.shadow:hover {
 #instruments {
 	padding: 0px;
 	margin: 0px;
+	border-bottom: 1px solid #999;
 }
 #instruments ul {
 	padding: 0px;
@@ -153,4 +165,38 @@ li.divider {
 	margin: 0px;
 	margin: 0px;
 	display: inline-block;
+}
+/*-----------===========-------------*/
+
+
+/*-----------~= T-A-B-S =~---------*/
+#tabs {
+	padding: 0px;
+	margin: 0px;
+}
+#tabs ul {
+	padding: 0px;
+	margin: 0px;
+	padding-left: 6px;
+}
+li.tab {
+	display: inline-block;
+	border-radius: 10px 10px 0px 0px;
+	background-color: white;
+	padding: 3px 8px;
+	margin: 0px;
+	margin-top: 5px;
+}
+li.tab:hover {
+	-moz-box-shadow: 1px -2px 0px rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow: 1px -2px 0px rgba(0, 0, 0, 0.25);
+	box-shadow: 1px -2px 0px rgba(0, 0, 0, 0.25);
+}
+#tabs ul li a {
+	padding: 0px;
+	margin: 0px;
+	font-size: 15px
+}
+#tabs ul li a:hover {
+	background-color: transparent;
 }

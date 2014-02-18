@@ -12,9 +12,9 @@ one:
   apartmentOrOffice: MyText
   floor: MyText
   entrance: MyText
-  phoneApplyStatus: MyText
-  internetApplyStatus: MyText
-  iptvApplyStatus: MyText
+  phoneApplyStatus: 1
+  internetApplyStatus: 1
+  iptvApplyStatus: 1
   applyTreatedBy: MyText
   plannedPhoneInstallDate: 2014-01-23
   plannedInternetInstallDate: 2014-01-23
@@ -41,7 +41,7 @@ one:
   iptvPaymentDate: 2014-01-23
   iptvInstallDate: 2014-01-23
   setToBox: false
-  clientType: MyText
+  clientType_id: 1
   insertionDate: 2014-01-23
 
 two:
@@ -56,9 +56,9 @@ two:
   apartmentOrOffice: MyText
   floor: MyText
   entrance: MyText
-  phoneApplyStatus: MyText
-  internetApplyStatus: MyText
-  iptvApplyStatus: MyText
+  phoneApplyStatus: 1
+  internetApplyStatus: 1
+  iptvApplyStatus: 1
   applyTreatedBy: MyText
   plannedPhoneInstallDate: 2014-01-23
   plannedInternetInstallDate: 2014-01-23
@@ -85,7 +85,7 @@ two:
   iptvPaymentDate: 2014-01-23
   iptvInstallDate: 2014-01-23
   setToBox: false
-  clientType: MyText
+  clientType_id: 1
   insertionDate: 2014-01-23
 
 another_apply:
@@ -100,9 +100,9 @@ another_apply:
   apartmentOrOffice: 164
   floor: 3
   entrance: 1
-  phoneApplyStatus: Установка
-  internetApplyStatus: Установка
-  iptvApplyStatus: Установка
+  phoneApplyStatus: 2
+  internetApplyStatus: 2
+  iptvApplyStatus: 1
   applyTreatedBy: Петрова Петра Петровна
   plannedPhoneInstallDate: 2012-12-30
   plannedInternetInstallDate: 2012-12-30
@@ -129,5 +129,5 @@ another_apply:
   iptvPaymentDate: 2012-12-28
   iptvInstallDate: 2013-01-12
   setToBox: true
-  clientType: Физ лицо
+  clientType_id: 1
   insertionDate: 2013-01-24

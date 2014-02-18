@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140124002942) do
+ActiveRecord::Schema.define(version: 20140218002055) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,9 +28,6 @@ ActiveRecord::Schema.define(version: 20140124002942) do
     t.text     "apartmentOrOffice"
     t.text     "floor"
     t.text     "entrance"
-    t.text     "phoneApplyStatus"
-    t.text     "internetApplyStatus"
-    t.text     "iptvApplyStatus"
     t.text     "applyTreatedBy"
     t.date     "plannedPhoneInstallDate"
     t.date     "plannedInternetInstallDate"
@@ -57,15 +54,29 @@ ActiveRecord::Schema.define(version: 20140124002942) do
     t.date     "iptvPaymentDate"
     t.date     "iptvInstallDate"
     t.boolean  "setToBox"
-    t.text     "clientType"
     t.date     "insertionDate"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "phoneApplyStatus"
+    t.integer  "internetApplyStatus"
+    t.integer  "iptvApplyStatus"
+    t.integer  "clientType_id"
+  end
+
+  create_table "apply_statuses", force: true do |t|
+    t.text     "status"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "client_types", force: true do |t|
+    t.text     "client"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "clients", force: true do |t|
     t.text     "nameOrFIO"
-    t.text     "personType"
     t.integer  "phoneContractNumber"
     t.integer  "internetContractNumber"
     t.text     "phoneNumber"
@@ -101,6 +112,13 @@ ActiveRecord::Schema.define(version: 20140124002942) do
     t.text     "contractAcceptor"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "clientType_id"
+  end
+
+  create_table "order_types", force: true do |t|
+    t.text     "order"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "orders", force: true do |t|
@@ -111,8 +129,6 @@ ActiveRecord::Schema.define(version: 20140124002942) do
     t.text     "performer"
     t.integer  "applyNumber"
     t.integer  "contractNumber"
-    t.text     "service"
-    t.text     "orderType"
     t.decimal  "cost",              precision: 7, scale: 2
     t.text     "portsNumber"
     t.text     "phoneNumber"
@@ -126,9 +142,17 @@ ActiveRecord::Schema.define(version: 20140124002942) do
     t.text     "responsiblePerson"
     t.text     "comments"
     t.text     "contactData"
-    t.text     "personType"
     t.date     "formingDate"
     t.date     "aoReturningDate"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "service_id"
+    t.integer  "orderType_id"
+    t.integer  "clientType_id"
+  end
+
+  create_table "services", force: true do |t|
+    t.text     "service"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

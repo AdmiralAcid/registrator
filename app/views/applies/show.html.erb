@@ -57,17 +57,17 @@
 
 <p>
   <strong>Phoneapplystatus:</strong>
-  <%= @apply.phoneApplyStatus %>
+  <%= ApplyStatus.find(@apply.phoneApplyStatus).status %>
 </p>
 
 <p>
   <strong>Internetapplystatus:</strong>
-  <%= @apply.internetApplyStatus %>
+  <%= ApplyStatus.find(@apply.internetApplyStatus).status %>
 </p>
 
 <p>
   <strong>Iptvapplystatus:</strong>
-  <%= @apply.iptvApplyStatus %>
+  <%= ApplyStatus.find(@apply.iptvApplyStatus).status %>
 </p>
 
 <p>
@@ -201,8 +201,8 @@
 </p>
 
 <p>
-  <strong>Clienttype:</strong>
-  <%= @apply.clientType %>
+  <strong>Clienttype_id:</strong>
+  <%= ClientType.find(@apply.clientType_id).client %>
 </p>
 
 <p>

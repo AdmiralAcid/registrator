@@ -11,8 +11,8 @@ class OrdersControllerTest < ActionController::TestCase
       performer: "Джа Джа Бинкс",
       applyNumber: 291,
       contractNumber: 388,
-      service: "IPTV",
-      orderType: "замена номера",
+      service_id: 2,
+      orderType_id: 15,
       cost: 456.0,
       portsNumber: "5+1",
       phoneNumber: "+79144678345;+79140093236",
@@ -26,7 +26,7 @@ class OrdersControllerTest < ActionController::TestCase
       responsiblePerson: "Оби Ван Кеноби",
       comments: "да пребудет с нами сила",
       contactData: "пейджер Оби Вана: 15-09",
-      personType: "Физ лицо",
+      clientType_id: 1,
       formingDate: "2013-11-13",
       aoReturningDate: "2015-01-16"
     }

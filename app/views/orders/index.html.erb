@@ -10,8 +10,8 @@
       <th>Performer</th>
       <th>Applynumber</th>
       <th>Contractnumber</th>
-      <th>Service</th>
-      <th>Ordertype</th>
+      <th>Service_id</th>
+      <th>Ordertype_id</th>
       <th>Cost</th>
       <th>Portsnumber</th>
       <th>Phonenumber</th>
@@ -25,7 +25,7 @@
       <th>Responsibleperson</th>
       <th>Comments</th>
       <th>Contactdata</th>
-      <th>Persontype</th>
+      <th>Clientype_id</th>
       <th>Formingdate</th>
       <th>Aoreturningdate</th>
       <th></th>
@@ -44,8 +44,8 @@
         <td><%= order.performer %></td>
         <td><%= order.applyNumber %></td>
         <td><%= order.contractNumber %></td>
-        <td><%= order.service %></td>
-        <td><%= order.orderType %></td>
+        <td><%= Service.find(order.service_id).service %></td>
+        <td><%= OrderType.find(order.orderType_id).order %></td>
         <td><%= order.cost %></td>
         <td><%= order.portsNumber %></td>
         <td><%= order.phoneNumber %></td>
@@ -59,7 +59,7 @@
         <td><%= order.responsiblePerson %></td>
         <td><%= order.comments %></td>
         <td><%= order.contactData %></td>
-        <td><%= order.personType %></td>
+        <td><%= ClientType.find(order.clientType_id).client %></td>
         <td><%= order.formingDate %></td>
         <td><%= order.aoReturningDate %></td>
         <td><%= link_to 'Show', order %></td>

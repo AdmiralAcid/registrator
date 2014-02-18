@@ -15,9 +15,9 @@ class AppliesControllerTest < ActionController::TestCase
       apartmentOrOffice: "14", 
       floor: "3", 
       #entrance: "1", 
-      phoneApplyStatus: "Отложено", 
-      internetApplyStatus: "Отказ", 
-      iptvApplyStatus: "Установка", 
+      phoneApplyStatus: 2, 
+      internetApplyStatus: 1, 
+      iptvApplyStatus: 3, 
       applyTreatedBy: "Петрова Петра Петровна", 
       plannedPhoneInstallDate: "2012-12-03", 
       plannedInternetInstallDate: "2012-12-27", 
@@ -44,7 +44,7 @@ class AppliesControllerTest < ActionController::TestCase
       iptvPaymentDate: "2012-12-28", 
       iptvInstallDate: "2013-01-12", 
       #setToBox: "true", 
-      clientType: "Физ лицо в нежилом помещении", 
+      clientType_id: 4, 
       insertionDate: "2013-01-24"
     }
   end

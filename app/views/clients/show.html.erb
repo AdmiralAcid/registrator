@@ -6,8 +6,8 @@
 </p>
 
 <p>
-  <strong>Persontype:</strong>
-  <%= @client.personType %>
+  <strong>Clienttype:</strong>
+  <%= ClientType.find(@client.clientType_id).client %>
 </p>
 
 <p>

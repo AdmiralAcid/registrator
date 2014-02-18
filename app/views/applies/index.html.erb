@@ -43,7 +43,7 @@
       <th>Iptvpaymentdate</th>
       <th>Iptvinstalldate</th>
       <th>Settobox</th>
-      <th>Clienttype</th>
+      <th>Clienttype_id</th>
       <th>Insertiondate</th>
       <th></th>
       <th></th>
@@ -65,9 +65,9 @@
         <td><%= apply.apartmentOrOffice %></td>
         <td><%= apply.floor %></td>
         <td><%= apply.entrance %></td>
-        <td><%= apply.phoneApplyStatus %></td>
-        <td><%= apply.internetApplyStatus %></td>
-        <td><%= apply.iptvApplyStatus %></td>
+        <td><%= ApplyStatus.find(apply.phoneApplyStatus).status %></td>
+        <td><%= ApplyStatus.find(apply.internetApplyStatus).status %></td>
+        <td><%= ApplyStatus.find(apply.iptvApplyStatus).status %></td>
         <td><%= apply.applyTreatedBy %></td>
         <td><%= apply.plannedPhoneInstallDate %></td>
         <td><%= apply.plannedInternetInstallDate %></td>
@@ -94,7 +94,7 @@
         <td><%= apply.iptvPaymentDate %></td>
         <td><%= apply.iptvInstallDate %></td>
         <td><%= apply.setToBox %></td>
-        <td><%= apply.clientType %></td>
+        <td><%= ClientType.find(apply.clientType_id).client %></td>
         <td><%= apply.insertionDate %></td>
         <td><%= link_to 'Show', apply %></td>
         <td><%= link_to 'Edit', edit_apply_path(apply) %></td>
